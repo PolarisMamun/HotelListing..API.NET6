@@ -8,14 +8,14 @@ namespace HotelListing.API.Repository
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly HotelListingDbContext _context;
-        private readonly IMapper _mapper;
-        private readonly AutoMapper.IConfigurationProvider configuragtionProvider;
+        /*private readonly IMapper _mapper;
+        private readonly AutoMapper.IConfigurationProvider configuragtionProvider;*/
 
-        public GenericRepository(HotelListingDbContext context, IMapper mapper)
+        public GenericRepository(HotelListingDbContext context/*, IMapper mapper*/)
         {
             this._context = context;
-            this._mapper = mapper;
-            this.configuragtionProvider = mapper.ConfigurationProvider;
+            /*this._mapper = mapper;
+            this.configuragtionProvider = mapper.ConfigurationProvider;*/
         }
 
         public async Task<T> AddAsync(T entity)
