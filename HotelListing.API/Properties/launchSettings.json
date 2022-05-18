@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "HotelListing.API": {
+    "HotelListing.API.Core.": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
